@@ -517,7 +517,7 @@ func (c *criService) CheckpointContainer(ctx context.Context, r *runtime.Checkpo
 	if err != nil {
 		return nil, fmt.Errorf("failed to get task for container %q: %w", r.GetContainerId(), err)
 	}
-	img, err := task.Checkpoint(ctx, []client.CheckpointTaskOpts{withCheckpointOpts(i.Runtime.Name, c.getContainerRootDir(r.GetContainerId()))}...)
+	img, err := task.Checkpoint(ctx, []client.CheckpointTaskOpts{withCheckpointOpts(r, i.Runtime.Name, c.getContainerRootDir(r.GetContainerId()))}...)
 	if err != nil {
 		return nil, fmt.Errorf("checkpointing container %q failed: %w", r.GetContainerId(), err)
 	}
@@ -650,7 +650,7 @@ func (c *criService) CheckpointContainer(ctx context.Context, r *runtime.Checkpo
 	return &runtime.CheckpointContainerResponse{}, nil
 }
 
-func withCheckpointOpts(rt, rootDir string) client.CheckpointTaskOpts {
+func withCheckpointOpts(cr *runtime.CheckpointContainerRequest, rt, rootDir string) client.CheckpointTaskOpts {
 	return func(r *client.CheckpointTaskInfo) error {
 		// Kubernetes currently supports checkpointing of container
 		// as part of the Forensic Container Checkpointing KEP.
@@ -663,8 +663,17 @@ func withCheckpointOpts(rt, rootDir string) client.CheckpointTaskOpts {
 				r.Options = &options.CheckpointOptions{}
 			}
 			opts, _ := r.Options.(*options.CheckpointOptions)
-
-			opts.Exit = !leaveRunning
+			if cr.Options != nil {
+				opts.Exit = cr.Options.GetExit()
+				opts.OpenTcp = cr.Options.GetOpenTcp()
+				opts.ExternalUnixSockets = cr.Options.GetExternalUnixSockets()
+				opts.Terminal = cr.Options.GetTerminal()
+				opts.FileLocks = cr.Options.GetFileLocks()
+				opts.EmptyNamespaces = cr.Options.GetEmptyNamespaces()
+				opts.CgroupsMode = cr.Options.GetCgroupsMode()
+			} else {
+				opts.Exit = !leaveRunning
+			}
 			opts.WorkPath = rootDir
 		}
 		return nil
