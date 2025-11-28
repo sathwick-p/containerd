@@ -23,7 +23,11 @@ var (
 )
 
 func checkForErrors(methodName string, hr error, resultBuffer *uint16) error {
-	errorFound := hr != nil
+	errorFound := false
+
+	if hr != nil {
+		errorFound = true
+	}
 
 	result := ""
 	if resultBuffer != nil {

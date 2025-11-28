@@ -449,6 +449,7 @@ func (c *Container) Checkpoint(ctx context.Context, r *task.CheckpointTaskReques
 		Path:                     r.Path,
 		Exit:                     opts.Exit,
 		AllowOpenTCP:             opts.OpenTcp,
+		SkipInflightTCP:          opts.SkipInflightTcp,
 		AllowExternalUnixSockets: opts.ExternalUnixSockets,
 		AllowTerminal:            opts.Terminal,
 		FileLocks:                opts.FileLocks,
