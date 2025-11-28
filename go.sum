@@ -302,8 +302,8 @@ github.com/sasha-s/go-deadlock v0.3.5 h1:tNCOEEDG6tBqrNDOX35j/7hL5FcFViG6awUGROb
 github.com/sasha-s/go-deadlock v0.3.5/go.mod h1:bugP6EGbdGYObIlx7pUZtWqlvo8k9H6vCBBsiChJQ5U=
 github.com/sathwick-p/go-runc v0.0.0-20251128192328-4ebd0003bca3 h1:R1VzK27LfrKiwF6OdpSSbzVcdvcqALsyMUX8RTxOtXg=
 github.com/sathwick-p/go-runc v0.0.0-20251128192328-4ebd0003bca3/go.mod h1:e6awBM7sfjtBFDoCTRbbFiIdKDSfUrdG6/hkqwA9jpE=
-github.com/sathwick-p/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20251123113617-a7d541fb49da h1:Y5wLhJfUpqJVnNwEROHBf5hjOOLvN3LkIGBkrModYm4=
-github.com/sathwick-p/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20251123113617-a7d541fb49da/go.mod h1:JUd9UbRisfySwZ3Q6/dpEWS1WUqCdJAnxvdwA6RM22U=
+github.com/sathwick-p/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20251128200517-0702cda9a2ef h1:wGhyd9uEpqW1PT/1Oa91aDfOqwvFzVo+OYK9mbHu8g8=
+github.com/sathwick-p/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20251128200517-0702cda9a2ef/go.mod h1:JUd9UbRisfySwZ3Q6/dpEWS1WUqCdJAnxvdwA6RM22U=
 github.com/sirupsen/logrus v1.2.0/go.mod h1:LxeOpSwHxABJmUn/MG1IvRgCAasNZTLOkJPxbbu5VWo=
 github.com/sirupsen/logrus v1.9.3 h1:dueUQJ1C2q9oE3F7wvmSGAaVtTmUizReu6fjN8uqzbQ=
 github.com/sirupsen/logrus v1.9.3/go.mod h1:naHLuLoDiP4jHNo9R0sCBMtWGeIprob74mVsIT4qYEQ=

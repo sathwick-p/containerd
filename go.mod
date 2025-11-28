@@ -176,6 +176,6 @@ exclude (
 
 replace github.com/containerd/containerd/api => ./api
 
-replace k8s.io/cri-api => github.com/sathwick-p/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20251123113617-a7d541fb49da
+replace k8s.io/cri-api => github.com/sathwick-p/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20251128200517-0702cda9a2ef
 
 replace github.com/containerd/go-runc => github.com/sathwick-p/go-runc v0.0.0-20251128192328-4ebd0003bca3

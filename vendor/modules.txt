@@ -910,7 +910,7 @@ k8s.io/client-go/util/exec
 k8s.io/client-go/util/flowcontrol
 k8s.io/client-go/util/keyutil
 k8s.io/client-go/util/workqueue
-# k8s.io/cri-api v0.34.2 => github.com/sathwick-p/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20251123113617-a7d541fb49da
+# k8s.io/cri-api v0.34.2 => github.com/sathwick-p/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20251128200517-0702cda9a2ef
 ## explicit; go 1.25.0
 k8s.io/cri-api/pkg/apis/runtime/v1
 k8s.io/cri-api/pkg/errors
@@ -953,5 +953,5 @@ tags.cncf.io/container-device-interface/pkg/parser
 ## explicit; go 1.19
 tags.cncf.io/container-device-interface/specs-go
 # github.com/containerd/containerd/api => ./api
-# k8s.io/cri-api => github.com/sathwick-p/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20251123113617-a7d541fb49da
+# k8s.io/cri-api => github.com/sathwick-p/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20251128200517-0702cda9a2ef
 # github.com/containerd/go-runc => github.com/sathwick-p/go-runc v0.0.0-20251128192328-4ebd0003bca3

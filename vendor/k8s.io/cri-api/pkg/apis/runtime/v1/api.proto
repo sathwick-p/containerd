@@ -1997,16 +1997,18 @@ message CheckpointOptions {
 	bool exit = 1;
 	// checkpoint open tcp connections
 	bool open_tcp = 2;
+    // skip not yet completely established TCP connections
+    bool skip_inflight_tcp = 3;
 	// checkpoint external unix sockets
-	bool external_unix_sockets = 3;
+	bool external_unix_sockets = 4;
 	// checkpoint terminals (ptys)
-	bool terminal = 4;
+	bool terminal = 5;
 	// allow checkpointing of file locks
-	bool file_locks = 5;
+	bool file_locks = 6;
 	// restore provided namespaces as empty namespaces
-	repeated string empty_namespaces = 6;
+	repeated string empty_namespaces = 7;
 	// set the cgroups mode, soft, full, strict
-	string cgroups_mode = 7;
+	string cgroups_mode = 8;
 }
 
 message CheckpointContainerResponse {}
