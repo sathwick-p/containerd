@@ -175,3 +175,5 @@ exclude (
 )
 
 replace k8s.io/cri-api => github.com/sathwick-p/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20251123113617-a7d541fb49da
+
+replace github.com/containerd/go-runc => github.com/sathwick-p/go-runc v0.0.0-20251128192328-4ebd0003bca3

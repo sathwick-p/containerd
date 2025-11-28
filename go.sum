@@ -53,8 +53,6 @@ github.com/containerd/fifo v1.1.0 h1:4I2mbh5stb1u6ycIABlBw9zgtlK8viPI9QkQNRQEEmY
 github.com/containerd/fifo v1.1.0/go.mod h1:bmC4NWMbXlt2EZ0Hc7Fx7QzTFxgPID13eH0Qu+MAb2o=
 github.com/containerd/go-cni v1.1.13 h1:eFSGOKlhoYNxpJ51KRIMHZNlg5UgocXEIEBGkY7Hnis=
 github.com/containerd/go-cni v1.1.13/go.mod h1:nTieub0XDRmvCZ9VI/SBG6PyqT95N4FIhxsauF1vSBI=
-github.com/containerd/go-runc v1.1.0 h1:OX4f+/i2y5sUT7LhmcJH7GYrjjhHa1QI4e8yO0gGleA=
-github.com/containerd/go-runc v1.1.0/go.mod h1:xJv2hFF7GvHtTJd9JqTS2UVxMkULUYw4JN5XAUZqH5U=
 github.com/containerd/imgcrypt/v2 v2.0.2 h1:WOEaE33CaSxzuRF8YLfAjHWuu1Xh27aPPQtqtALqfuM=
 github.com/containerd/imgcrypt/v2 v2.0.2/go.mod h1:8r4JW1b83jkDhaioOUZ7idxIYp+Wn1k4E4KXwy2oSNI=
 github.com/containerd/log v0.1.0 h1:TCJt7ioM2cr/tfR8GPbGf9/VRAX8D2B4PjzCpfX540I=
@@ -304,6 +302,8 @@ github.com/russross/blackfriday/v2 v2.1.0 h1:JIOH55/0cWyOuilr9/qlrm0BSXldqnqwMsf
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/sasha-s/go-deadlock v0.3.5 h1:tNCOEEDG6tBqrNDOX35j/7hL5FcFViG6awUGROb2NsU=
 github.com/sasha-s/go-deadlock v0.3.5/go.mod h1:bugP6EGbdGYObIlx7pUZtWqlvo8k9H6vCBBsiChJQ5U=
+github.com/sathwick-p/go-runc v0.0.0-20251128192328-4ebd0003bca3 h1:R1VzK27LfrKiwF6OdpSSbzVcdvcqALsyMUX8RTxOtXg=
+github.com/sathwick-p/go-runc v0.0.0-20251128192328-4ebd0003bca3/go.mod h1:e6awBM7sfjtBFDoCTRbbFiIdKDSfUrdG6/hkqwA9jpE=
 github.com/sathwick-p/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20251123113617-a7d541fb49da h1:Y5wLhJfUpqJVnNwEROHBf5hjOOLvN3LkIGBkrModYm4=
 github.com/sathwick-p/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20251123113617-a7d541fb49da/go.mod h1:JUd9UbRisfySwZ3Q6/dpEWS1WUqCdJAnxvdwA6RM22U=
 github.com/sirupsen/logrus v1.2.0/go.mod h1:LxeOpSwHxABJmUn/MG1IvRgCAasNZTLOkJPxbbu5VWo=
