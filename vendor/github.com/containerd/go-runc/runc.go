@@ -509,6 +509,8 @@ type CheckpointOpts struct {
 	ParentPath string
 	// AllowOpenTCP allows open tcp connections to be checkpointed
 	AllowOpenTCP bool
+	// SkipInflightTCP allows you to skip not yet completely established TCP connections before checkpointing
+	SkipInflightTCP bool
 	// AllowExternalUnixSockets allows external unix sockets to be checkpointed
 	AllowExternalUnixSockets bool
 	// AllowTerminal allows the terminal(pty) to be checkpointed with a container
@@ -556,6 +558,9 @@ func (o *CheckpointOpts) args() (out []string) {
 	}
 	if o.AllowExternalUnixSockets {
 		out = append(out, "--ext-unix-sk")
+	}
+	if o.SkipInflightTCP{
+		out = append(out, "--skip-in-flight")
 	}
 	if o.AllowTerminal {
 		out = append(out, "--shell-job")

@@ -161,8 +161,8 @@ github.com/containerd/fifo
 # github.com/containerd/go-cni v1.1.13
 ## explicit; go 1.21
 github.com/containerd/go-cni
-# github.com/containerd/go-runc v1.1.0
-## explicit; go 1.18
+# github.com/containerd/go-runc v1.1.0 => github.com/sathwick-p/go-runc v0.0.0-20251128192328-4ebd0003bca3
+## explicit; go 1.22
 github.com/containerd/go-runc
 # github.com/containerd/imgcrypt/v2 v2.0.2
 ## explicit; go 1.23.0
@@ -953,3 +953,4 @@ tags.cncf.io/container-device-interface/pkg/parser
 ## explicit; go 1.19
 tags.cncf.io/container-device-interface/specs-go
 # k8s.io/cri-api => github.com/sathwick-p/kubernetes/staging/src/k8s.io/cri-api v0.0.0-20251123113617-a7d541fb49da
+# github.com/containerd/go-runc => github.com/sathwick-p/go-runc v0.0.0-20251128192328-4ebd0003bca3
