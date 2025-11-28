@@ -59,6 +59,7 @@ type CheckpointConfig struct {
 	Path                     string
 	Exit                     bool
 	AllowOpenTCP             bool
+	SkipInflightTCP			 bool
 	AllowExternalUnixSockets bool
 	AllowTerminal            bool
 	FileLocks                bool

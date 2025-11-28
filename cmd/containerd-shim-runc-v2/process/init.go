@@ -449,6 +449,7 @@ func (p *Init) checkpoint(ctx context.Context, r *CheckpointConfig) error {
 		WorkDir:                  work,
 		ImagePath:                r.Path,
 		AllowOpenTCP:             r.AllowOpenTCP,
+		SkipInflightTCP:          r.SkipInflightTCP,
 		AllowExternalUnixSockets: r.AllowExternalUnixSockets,
 		AllowTerminal:            r.AllowTerminal,
 		FileLocks:                r.FileLocks,
