@@ -83,7 +83,6 @@ func withCheckpointOpts(rt string, cliContext *cli.Context) containerd.Checkpoin
 	return func(r *containerd.CheckpointTaskInfo) error {
 		imagePath := cliContext.String("image-path")
 		workPath := cliContext.String("work-path")
-		
 		if r.Options == nil {
 			r.Options = &options.CheckpointOptions{}
 		}
