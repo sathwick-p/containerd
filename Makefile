@@ -323,22 +323,13 @@ define pack_release
 endef
 
 
-releases/$(RELEASE).tar.gz:
-ifneq ($(GOOS),windows)
-	@make $(BINARIES)
+releases/$(RELEASE).tar.gz: $(BINARIES)
 	@echo "$(WHALE) $@"
 	$(call pack_release,$(RELEASE))
-else
-	@echo "Skipping $(RELEASE) for $(GOOS)"
-endif
 
 release: releases/$(RELEASE).tar.gz
-ifneq ($(GOOS),windows)
 	@echo "$(WHALE) $@"
 	@cd releases && sha256sum $(RELEASE).tar.gz >$(RELEASE).tar.gz.sha256sum
-else
-	@echo "Skipping releasing $(RELEASE) for $(GOOS)"
-endif
 
 releases/$(STATICRELEASE).tar.gz:
 ifeq ($(GOOS),linux)
